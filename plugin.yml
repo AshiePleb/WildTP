@@ -1,0 +1,18 @@
+name: WildTP
+main: Jackaboi\WildTP\Main
+version: 1.0.0
+api: [3.3.2]
+load: STARTUP
+author: Jackaboi18
+description: Telaports you somewhere in the Wild!
+
+commands:
+ wild:
+  description: §bTelaports you somewhere in the Wild!
+  usage: "§b/wild"
+  permission: §bWildTP.wild
+
+permissions:
+  WildTP.wild:
+    default: true
+    description: §bGives you permission to run /wild
