@@ -4,13 +4,13 @@ version: 1.0.0
 api: [3.3.2]
 load: STARTUP
 author: Jackaboi18
-description: Telaports you somewhere in the Wild!
+description: Teleports you somewhere in the Wild!
 
 commands:
  wild:
-  description: §bTelaports you somewhere in the Wild!
+  description: §bTeleports you somewhere in the Wild!
   usage: "§b/wild"
-  permission: §bWildTP.wild
+  permission: WildTP.wild
 
 permissions:
   WildTP.wild:
