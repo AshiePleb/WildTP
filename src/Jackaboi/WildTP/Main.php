@@ -14,7 +14,7 @@ use pocketmine\math\Vector3;
 class Main extends PluginBase {
 
 	public function onEnable() {
-		$this->getLogger()->info("§bWildTP is enabled!");
+		$this->getLogger()->info("WildTP is enabled!");
 	}
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $param ) :bool{
@@ -30,11 +30,11 @@ class Main extends PluginBase {
 						$sender->sendMessage("§b[WildTP] teleporting to: $x, $y, $z");
 					}
 					else {
-						$sender->sendMessage("§b[WildTP] This command can only be run in-game!");
+						$sender->sendMessage("[WildTP] This command can only be run in-game!");
 					}
 				}
 				else {
-					$sender->sendMessage("§b[WildTP] You do not have permission to run this command!");
+					$sender->sendMessage("[WildTP] You do not have permission to run this command!");
 				}
 				return true;
 			break;
@@ -42,7 +42,7 @@ class Main extends PluginBase {
 		}
 	}
 	public function onDisable() {
-		$this->getLogger()->info("§bWildTP has been disabled!");
+		$this->getLogger()->info("WildTP has been disabled!");
 	}
 
 }
