@@ -14,7 +14,7 @@ use pocketmine\math\Vector3;
 class Main extends PluginBase {
 
 	public function onEnable() {
-		$this->getLogger()->info("WildTP is enabled!");
+		$this->getLogger()->info("WildTP has been enabled!");
 	}
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $param ) :bool{
