@@ -22,9 +22,9 @@ class Main extends PluginBase {
 			case "wild":
 				if($sender->hasPermission("WildTP.wild")) {
 					if($sender instanceof Player) {
-						$x = rand(1,350000);
-            					$y = rand(1,256);
-						$z = rand(1,350000);
+						$x = rand(0, 255);
+            					$y = rand(0, 255);
+						$z = rand(0, 255);
 						$sender->teleport($sender->getLevel()->getSafeSpawn(new Vector3($x, $y, $z)));
 						$sender->sendTip("§b[WildTP] You have been teleported somewhere in the wild!");
 						$sender->sendMessage("§b[WildTP] teleporting to: $x, $y, $z");
